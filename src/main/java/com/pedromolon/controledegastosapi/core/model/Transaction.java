@@ -41,19 +41,19 @@ public class Transaction {
 
     private void validate(BigDecimal amount, TransactionType type, LocalDate date, Category category, User user) {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
-            throw new IllegalArgumentException("O valor da transação deve ser estritamente maior que zero.");
+            throw new IllegalArgumentException("Amount must be greater than zero.");
         }
         if (type == null) {
-            throw new IllegalArgumentException("O tipo da transação é obrigatório.");
+            throw new IllegalArgumentException("Transaction type is required.");
         }
         if (category == null) {
-            throw new IllegalArgumentException("A categoria é obrigatória.");
+            throw new IllegalArgumentException("Category is required.");
         }
         if (user == null) {
-            throw new IllegalArgumentException("O usuário é obrigatório.");
+            throw new IllegalArgumentException("User is required.");
         }
         if (!category.getType().equals(type)) {
-            throw new IllegalArgumentException("O tipo da transação não coincide com o tipo da categoria selecionada.");
+            throw new IllegalArgumentException("Transaction type does not match the selected category type.");
         }
     }
 
