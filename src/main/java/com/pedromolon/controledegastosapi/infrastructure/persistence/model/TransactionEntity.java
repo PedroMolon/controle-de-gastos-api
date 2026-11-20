@@ -1,4 +1,4 @@
-package com.pedromolon.controledegastosapi.infrastructure.persistence;
+package com.pedromolon.controledegastosapi.infrastructure.persistence.model;
 
 import com.pedromolon.controledegastosapi.core.enums.TransactionType;
 import jakarta.persistence.*;

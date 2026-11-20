@@ -1,4 +1,4 @@
-package com.pedromolon.controledegastosapi.infrastructure.persistence;
+package com.pedromolon.controledegastosapi.infrastructure.persistence.model;
 
 import jakarta.persistence.*;
 import lombok.*;
